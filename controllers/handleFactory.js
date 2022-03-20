@@ -56,8 +56,8 @@ exports.createOne = Model => catchAsync(async (req, res, next) => {
 })
 
 exports.updateOne = Model => catchAsync(async (req, res, next) => {
-    console.log(req.files)
-    console.log(req.body)
+    //console.log(req.files)
+    //console.log(req.body)
     const newDoc = await Model.findById(req.params.id)
     if (!newDoc) {
         return next(new AppError(`No document found with that id`, 404))

@@ -2,10 +2,10 @@ import axios from 'axios'
 import { showAlert } from './alerts'
 
 export const updateSettings = async (data, type) => {
-    console.log(data)
+    //console.log(data)
     const url = type === 'data'
-        ? "http://127.0.0.1:5050/api/v1/users/updateMe"
-        : "http://127.0.0.1:5050/api/v1/users/updatePassword"
+        ? "/api/v1/users/updateMe"
+        : "/api/v1/users/updatePassword"
     try {
         const res = await axios(
             {
@@ -14,7 +14,7 @@ export const updateSettings = async (data, type) => {
                 data
             }
         )
-        console.log(res)
+        //console.log(res)
         if (res.data.status === 'success') {
             showAlert('success', `${type.toUpperCase()} updated successfully`)
             window.setTimeout(() => {
@@ -22,7 +22,7 @@ export const updateSettings = async (data, type) => {
             }, 1500)
         }
     } catch (err) {
-        // console.log(err.response.data)
+        // //console.log(err.response.data)
         showAlert('error', err.response.data.message)
     }
 }

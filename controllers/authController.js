@@ -34,7 +34,7 @@ exports.signup = catchAsync(async (req, res, next) => {
 
     const newUser = await User.create(req.body)
     const url = `${req.protocol}://${req.get('host')}/me`
-    console.log(url)
+    //console.log(url)
     await new Email(newUser, url).sendWelcome()
 
     createSendToken(newUser, 201, res, "User Created Successfully")
@@ -73,7 +73,7 @@ exports.protect = catchAsync(async (req, res, next) => {
 
     //2)Verifying token
     const decoded = await promisify(jwt.verify)(token, process.env.JWT_SECRET)
-    // console.log(decoded)
+    // //console.log(decoded)
 
     //3)Check if user still exists
     const freshUser = await User.findById(decoded.id)
@@ -165,7 +165,7 @@ exports.updateUserPassword = catchAsync(async (req, res, next) => {
 })
 
 exports.isLoggedIn = async (req, res, next) => {
-    // console.log("COOKIES IN AUTH CONTROLLER", req.cookies)
+    // //console.log("COOKIES IN AUTH CONTROLLER", req.cookies)
     if (req.cookies && req.cookies.jwt) {
         try {
             const decoded = await promisify(jwt.verify)(req.cookies.jwt, process.env.JWT_SECRET)
@@ -182,7 +182,7 @@ exports.isLoggedIn = async (req, res, next) => {
             }
 
             //Grant access to the user
-            // console.log("USER in auth Controller", freshUser)
+            // //console.log("USER in auth Controller", freshUser)
             res.locals.user = freshUser
             return next()
         } catch (err) {
