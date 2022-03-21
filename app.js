@@ -8,6 +8,7 @@ const reviewRouter = require('./routes/reviewRoutes')
 const bookingRouter = require('./routes/bookingRoutes')
 const viewRouter = require('./routes/viewRoutes')
 const cookieParser = require('cookie-parser')
+const compression = require('compression')
 
 const cors = require('cors')
 const app = express()
@@ -42,6 +43,8 @@ app.use('/api', limiter)
 //body-parser
 app.use(express.json({ limit: '10kb' }))
 app.use(cookieParser())
+
+app.use(compression())
 
 //Data sanitization against NoSQL query injection
 app.use(mongoSanitize())
