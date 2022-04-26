@@ -83,10 +83,8 @@ reviewSchema.statics.calcAverageRatings = async function (tourId) {
 }
 
 reviewSchema.post('save', function () {
-    // this points to current review
+    // this points to current review document which is an instance of model on which we want to call the static method
     this.constructor.calcAverageRatings(this.tour)
-
-
 })
 
 // findByIdAndUpdate
