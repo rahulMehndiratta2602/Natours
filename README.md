@@ -102,17 +102,7 @@ Before using the API, you need to set the variables in Postman depending on your
 - {{password}} with your user password as value.
 ```
 
-Check [Natours API Documentation](https://documenter.getpostman.com/view/8689170/SVmzvwpY?version=latest) for more info.
-
-<b> API Features: </b>
-
-Tours List 👉 https://natours-rahul-mehndiratta.herokuapp.com/api/v1/tours
-
-Tours State 👉 https://natours-rahul-mehndiratta.herokuapp.com/api/v1/tours/tour-stats
-
-Get Top 5 Cheap Tours 👉 https://natours-rahul-mehndiratta.herokuapp.com/api/v1/tours/top-5-cheap
-
-Get Tours Within Radius 👉 https://natours-rahul-mehndiratta.herokuapp.com/api/v1/tours/tours-within/200/center/34.098453,-118.096327/unit/mi
+<a href="https://www.getpostman.com/collections/fe31492eee2b3ee3ce83">PostMan Demo</a> •
 
 ## Deployment
 
@@ -158,6 +148,10 @@ heroku apps:rename natours-users
     -   Prevent duplicate bookings after user has booked that exact tour, implement favourite tours
 -   Advanced authentication features
     -   Signup, confirm user email, login with refresh token, two-factor authentication
+-   Enable PWA
+-   Improve overall UX/UI and fix bugs
+-   Featured Tours
+-   Recently Viewed Tours
 -   And More ! There's always room for improvement!
 
 ## Installation
@@ -181,13 +175,9 @@ eslint-plugin-import eslint-plugin-jsx-a11y  eslint-plugin-react --save-dev
 
 ## Known Bugs
 
-Feel free to email me at lakshman.gope2@gmail.com if you run into any issues or have questions, ideas or concerns.
+Feel free to email me at mongodbreactnode@gmail.com if you run into any issues or have questions, ideas or concerns.
 Please enjoy and feel free to share your opinion, constructive criticism, or comments about my work. Thank you! 🙂
 
-## Future Updates
 
--   Enable PWA
--   Improve overall UX/UI and fix bugs
--   Featured Tours
--   Recently Viewed Tours
--   And More ! There's always room for improvement!
+
+
