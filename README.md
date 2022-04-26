@@ -25,6 +25,11 @@
 
 ## Deployed Version
 
+- Test Credentials:
+- email:laura@example.com(user),leo@example.com(guide),aarav@example.com(lead-guide)
+- password for all:test1234 
+  
+
 Live demo (Feel free to visit) 👉 : https://natours-rahul-mehndiratta.herokuapp.com/
 
 ## Acknowledgement
