@@ -131,7 +131,7 @@ You can also changed your website url by running this command:
 heroku apps:rename natours-users
 ```
 
-## Build With
+## Techonologies Used
 
 -   [NodeJS](https://nodejs.org/en/) - JS runtime environment
 -   [Express](http://expressjs.com/) - The web framework used
@@ -139,7 +139,6 @@ heroku apps:rename natours-users
 -   [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) - Cloud database service
 -   [Pug](https://pugjs.org/api/getting-started.html) - High performance template engine
 -   [JSON Web Token](https://jwt.io/) - Security token
--   [ParcelJS](https://parceljs.org/) - Blazing fast, zero configuration web application bundler
 -   [Stripe](https://stripe.com/) - Online payment API
 -   [Postman](https://www.getpostman.com/) - API testing
 -   [Mailtrap](https://mailtrap.io/) & [Sendgrid](https://sendgrid.com/) - Email delivery platform
@@ -147,13 +146,10 @@ heroku apps:rename natours-users
 
 ## To-do
 
--   Review and rating
-    -   Allow user to add a review directly at the website after they have taken a tour
--   Booking
-    -   Prevent duplicate bookings after user has booked that exact tour, implement favourite tours
--   Advanced authentication features
-    -   Signup, confirm user email, login with refresh token, two-factor authentication
--   Enable PWA
+
+-   Allow user to add a review directly at the website after they have taken a tour
+-   Prevent duplicate bookings after user has booked that exact tour, implement favourite tours
+-   Signup, confirm user email, login with refresh token, two-factor authentication
 -   Improve overall UX/UI and fix bugs
 -   Featured Tours
 -   Recently Viewed Tours
